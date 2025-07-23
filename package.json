@@ -1,9 +1,9 @@
 {
+  "homepage": "https://yasickogul.github.io/jathuPort",
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jathusan-jesuthasan.github.io/my-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,7 +15,9 @@
     "analyze": "npx vite-bundle-analyzer dist",
     "predeploy": "npm run build:gh-pages",
     "deploy": "gh-pages -d dist -f",
-    "deploy:clean": "gh-pages-clean && npm run deploy"
+    "deploy:clean": "gh-pages-clean && npm run deploy",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
